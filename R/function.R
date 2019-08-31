@@ -27,22 +27,22 @@ get_reviews <- function(base_url,page_lim = NULL,source,verbose = TRUE) {
 
   if(source == "trustpilot") {
 
-    df = trustpilotR::get_reviews(base_url,page_lim,source,verbose)
+    df = trustpilotR::get_reviews(base_url,page_lim)
   }
 
   if(source == "yelp") {
 
-    df = yelpR::get_reviews(base_url,page_lim,source)
+    df = yelpR::get_reviews(base_url,page_lim)
   }
 
   if(source == "tripadvisor") {
 
-    df = tripR::get_reviews(base_url,page_lim,source)
+    df = tripR::get_reviews(base_url,page_lim)
   }
 
   if(source == "amazon") {
 
-    print("not available")
+    df = amazonR::get_reviews(base_url,page_lim)
   }
 
   return(df)

@@ -1,11 +1,11 @@
 Package: reviewR
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Scraping customer reviews from different websites
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Author: Peer Chirstensen
+Maintainer: Peer Christensen <hr.pchristensen@gmail.com>
+Description: This package lets the user scrape any number of reviews from
+    Trustpilot, Amazon, Yelp and Tripadvisor.
 License: GPL-2
 Encoding: UTF-8
 LazyData: true
