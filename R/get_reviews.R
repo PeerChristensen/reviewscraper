@@ -24,11 +24,11 @@
 get_reviews <- function(base_url, page_lim = NULL, source, verbose = TRUE) {
 
   if (source == "trustpilot") {
-    df <- get_trustpilot_reviews(base_url, page_lim)
+    df <- get_trustpilot_reviews(base_url, page_lim, verbose = verbose)
   }
 
   if (source == "yelp") {
-    df <- get_yelp_reviews(base_url, page_lim)
+    df <- get_yelp_reviews(base_url, page_lim, verbose = verbose)
   }
 
   #if (source == "tripadvisor") {
@@ -36,7 +36,7 @@ get_reviews <- function(base_url, page_lim = NULL, source, verbose = TRUE) {
   #}
 
   if (source == "amazon") {
-    df <- get_amazon_reviews(base_url, page_lim)
+    df <- get_amazon_reviews(base_url, page_lim, verbose = verbose)
   }
 
   return(df)

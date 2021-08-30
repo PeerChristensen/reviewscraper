@@ -15,7 +15,7 @@
 #' @import stringr
 #' @importFrom purrr map
 #'
-get_amazon_reviews <- function(base_url, page_lim = 3, verbose = TRUE) {
+get_amazon_reviews <- function(base_url, page_lim = 3, verbose = FALSE) {
 
   page_nums <- 1:page_lim
 
